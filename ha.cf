@@ -1,0 +1,20 @@
+pacemaker on
+
+debug 0
+udpport 694
+keepalive 2
+warntime 7
+deadtime 10
+initdead 10
+logfacility local1
+
+ucast eth2 192.168.9.121
+ucast eth2 192.168.9.122
+
+ping 192.168.1.1
+
+node s1
+node s2
+
+watchdog /dev/watchdog
+respawn root /usr/lib64/heartbeat/ifcheckd
