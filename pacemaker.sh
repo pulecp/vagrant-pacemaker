@@ -10,7 +10,7 @@ do
   sleep 1
 done
 
-sleep 5
+sleep 30
 
 ### setting option
 crm configure property stonith-enabled="false"
